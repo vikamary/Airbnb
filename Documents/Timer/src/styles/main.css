@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-raleway: "Raleway", sans-serif;
+  --start: #54e258;
+  --pause: #fca326;
+  --hover: #121212;
+}
+
+.timer .timer__title {
+  display: flex;
+  justify-content: center;
+  margin: 180px 0 50px;
+  font-family: var(--font-raleway);
+  font-size: 50px;
+  font-weight: 400;
+}
+.timer .timer__btn {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.timer .btn {
+  display: inline-block;
+  max-width: 100px;
+  width: 100%;
+  background-color: transparent;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-family: var(--font-raleway);
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.2s ease-in;
+}
+.timer .btn:hover {
+  box-shadow: 0px 8px 16px -10px rgba(15, 15, 15, 0.8235294118);
+}
+.timer .timer__start {
+  background-color: #54e258;
+}
+.timer .timer__start:hover {
+  background-color: var(--hover);
+}
+.timer .timer__pause {
+  background-color: #fca326;
+}
+.timer .timer__pause:hover {
+  background-color: var(--hover);
+}/*# sourceMappingURL=main.css.map */

@@ -10,11 +10,12 @@ const Categories = () => {
           <div className="categories__row">
             <div className="categories__list">
               {
-                categoriesData.map((category)=>{
+                categoriesData.map((category, index)=>{
                   return (
                     <List 
                       title={category.title} 
                       img={category.img}
+                      key={index}
                     />
                   )
                 })

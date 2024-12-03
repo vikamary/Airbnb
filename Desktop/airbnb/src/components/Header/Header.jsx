@@ -1,3 +1,4 @@
+import Categories from '../Categories/Categories';
 import Logo from '../Logo/Logo';
 import SearchBar from '../SearchBar/SearchBar';
 import User from '../User/User';
@@ -5,8 +6,9 @@ import './style.scss';
 
 function Header () {
   return (
-    <header className="header">
-      <div className="container">
+    <div className='header-wrapper'>
+      <header className="header">
+        <div className="container">
         <div className="header__row">
           <div className="header__logo">
             <Logo />
@@ -18,8 +20,10 @@ function Header () {
             <User />
           </div>
         </div>
-      </div>
-    </header>
+        </div>
+      </header>
+      <Categories />
+    </div>
   )
 }
 
